@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="github" fetch="https://github.com" />
+        <remote name="yocto" fetch="https://git.yoctoproject.org" />
+
+        <default remote="yocto" revision="kirkstone"/>
+
+    <!-- Core layers -->
+        <!-- we could also use bitbake and openembedded-core from openembedded/ 
+             but it is simpler to use poky -->
+        <project path="poky" name="poky" />
+        <project path="meta-openembedded" name="openembedded/meta-openembedded" remote="github" />
+
+    <!-- Clang -->
+        <project path="meta-clang" name="kraj/meta-clang" remote="github" />
+
+    <!-- SELinux -->
+        <project path="meta-selinux" name="meta-selinux" />
+
+    <!-- Security -->
+        <project path="meta-security" name="meta-security" />
+
+    <!-- Browser -->
+        <project path="meta-browser" name="OSSystems/meta-browser" remote="github" revision="master" />
+
+    <!-- Vendor layers -->
+        <project path="meta-intel" name="meta-intel" />
+        <project path="meta-qcom" name="meta-qcom" />
+        <project path="meta-arm" name="meta-arm" />
+
+    <!-- ChromeOS layers -->
+        <project path="meta-chromeos" name="konsulko/meta-chromeos" remote="github" />
+</manifest>
