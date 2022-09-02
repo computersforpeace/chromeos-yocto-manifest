@@ -12,6 +12,7 @@ manifests and its specification.
 ```shell
 $ repo init -b kirkstone -u https://github.com/konsulko/chromeos-yocto-manifest.git
 $ repo sync -j4
+$ repo forall -pc 'git checkout --track $REPO_REMOTE/$REPO_RREV'
 $ source ./meta-chromeos/cros-init-build-env [build-directory]
 ```
 
