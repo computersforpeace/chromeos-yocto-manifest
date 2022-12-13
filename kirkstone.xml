@@ -29,5 +29,5 @@
         <project path="meta-arm" name="meta-arm" />
 
     <!-- ChromeOS layers -->
-        <project path="meta-chromeos" name="konsulko/meta-chromeos" remote="github" />
+        <project path="meta-chromeos" name="computersforpeace/meta-chromeos" remote="github" />
 </manifest>
