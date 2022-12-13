@@ -10,9 +10,8 @@ manifests and its specification.
 ## Quick Start
 
 ```shell
-$ repo init -b kirkstone -u https://github.com/computersforpeace/chromeos-yocto-manifest.git
+$ repo init -b main -u https://github.com/computersforpeace/chromeos-yocto-manifest.git
 $ repo sync -j4
-$ repo forall -pc 'git checkout --track $REPO_REMOTE/$REPO_RREV'
 $ source ./meta-chromeos/cros-init-build-env [build-directory]
 ```
 
